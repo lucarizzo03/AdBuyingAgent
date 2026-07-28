@@ -1,0 +1,1622 @@
+[
+  {
+    "day": 1,
+    "allocations": {
+      "search": 125.0,
+      "meta": 125.0,
+      "tiktok": 125.0,
+      "display": 125.0
+    },
+    "results": {
+      "search": {
+        "spend": 125.0,
+        "clicks": 51,
+        "conversions": 4,
+        "cpa": 31.25
+      },
+      "meta": {
+        "spend": 125.0,
+        "clicks": 97,
+        "conversions": 4,
+        "cpa": 31.25
+      },
+      "tiktok": {
+        "spend": 125.0,
+        "clicks": 291,
+        "conversions": 5,
+        "cpa": 25.0
+      },
+      "display": {
+        "spend": 125.0,
+        "clicks": 171,
+        "conversions": 1,
+        "cpa": 125.0
+      }
+    },
+    "reasoning": "With no performance data available, an even split across all four channels provides a neutral baseline to gather comparable data. This equal allocation ensures we can assess each channel's efficiency under identical budget conditions before making optimization decisions. Day 1 data will inform whether to shift spend toward higher-performing channels."
+  },
+  {
+    "day": 2,
+    "allocations": {
+      "search": 134.69,
+      "meta": 134.69,
+      "tiktok": 149.91,
+      "display": 80.71
+    },
+    "results": {
+      "search": {
+        "spend": 134.69,
+        "clicks": 53,
+        "conversions": 4,
+        "cpa": 33.67
+      },
+      "meta": {
+        "spend": 134.69,
+        "clicks": 103,
+        "conversions": 4,
+        "cpa": 33.67
+      },
+      "tiktok": {
+        "spend": 149.91,
+        "clicks": 217,
+        "conversions": 3,
+        "cpa": 49.97
+      },
+      "display": {
+        "spend": 80.71,
+        "clicks": 105,
+        "conversions": 1,
+        "cpa": 80.71
+      }
+    },
+    "reasoning": "TikTok shows the strongest CPA at $25 versus $31.25 for search and meta, so I'm scaling it up to the 30% daily maximum. Display's CPA of $125 is dramatically worse than other channels, so I'm cutting it by the maximum 30% to free up budget. The freed display budget is redistributed to search, meta, and tiktok to capitalize on their stronger efficiency."
+  },
+  {
+    "day": 3,
+    "allocations": {
+      "search": 171.07,
+      "meta": 171.07,
+      "tiktok": 102.64,
+      "display": 55.22
+    },
+    "results": {
+      "search": {
+        "spend": 171.07,
+        "clicks": 65,
+        "conversions": 5,
+        "cpa": 34.21
+      },
+      "meta": {
+        "spend": 171.07,
+        "clicks": 156,
+        "conversions": 5,
+        "cpa": 34.21
+      },
+      "tiktok": {
+        "spend": 102.64,
+        "clicks": 274,
+        "conversions": 5,
+        "cpa": 20.53
+      },
+      "display": {
+        "spend": 55.22,
+        "clicks": 66,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search and meta are both delivering consistent CPAs around $33, making them the strongest performers worth scaling up to their 30% increase limits. TikTok's CPA has been elevated ($37-50) and display remains very poor at $80+, so both are cut significantly to reallocate budget toward the more efficient channels. With only 3 days of data trends are still stabilizing, so cuts are meaningful but not extreme, preserving some presence in weaker channels to continue gathering signal."
+  },
+  {
+    "day": 4,
+    "allocations": {
+      "search": 157.18,
+      "meta": 157.18,
+      "tiktok": 133.58,
+      "display": 52.06
+    },
+    "results": {
+      "search": {
+        "spend": 157.18,
+        "clicks": 69,
+        "conversions": 5,
+        "cpa": 31.44
+      },
+      "meta": {
+        "spend": 157.18,
+        "clicks": 115,
+        "conversions": 4,
+        "cpa": 39.3
+      },
+      "tiktok": {
+        "spend": 133.58,
+        "clicks": 315,
+        "conversions": 5,
+        "cpa": 26.72
+      },
+      "display": {
+        "spend": 52.06,
+        "clicks": 70,
+        "conversions": 1,
+        "cpa": 52.06
+      }
+    },
+    "reasoning": "Display has delivered zero sales over multiple days with a 7-day avg CPA of $102.85, making it the clear underperformer \u2014 cutting it to its minimum allows reallocation to better channels. TikTok shows the strongest CPA at $31.83 average and an impressive $20.53 yesterday, so it gets a modest increase, though yesterday's single-day result may include noise. Search and meta remain stable and similar in performance, so they hold roughly even with slight reductions to fund the rebalance."
+  },
+  {
+    "day": 5,
+    "allocations": {
+      "search": 172.0,
+      "meta": 130.0,
+      "tiktok": 158.0,
+      "display": 40.0
+    },
+    "results": {
+      "search": {
+        "spend": 172.0,
+        "clicks": 69,
+        "conversions": 6,
+        "cpa": 28.67
+      },
+      "meta": {
+        "spend": 130.0,
+        "clicks": 104,
+        "conversions": 4,
+        "cpa": 32.5
+      },
+      "tiktok": {
+        "spend": 158.0,
+        "clicks": 341,
+        "conversions": 5,
+        "cpa": 31.6
+      },
+      "display": {
+        "spend": 40.0,
+        "clicks": 54,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok continues to show the lowest CPA ($30.55 avg, $26.72 yesterday) and strong click volume, so I'm scaling it up to its ~30% maximum increase from yesterday's spend. Display remains consistently expensive at $85.92 avg CPA with minimal sales, so I'm trimming it further to redirect spend toward better performers. Meta's CPA is drifting higher than search, so I'm modestly reducing it while holding search roughly stable given its solid $32.64 avg CPA."
+  },
+  {
+    "day": 6,
+    "allocations": {
+      "search": 173.31,
+      "meta": 129.98,
+      "tiktok": 151.65,
+      "display": 45.06
+    },
+    "results": {
+      "search": {
+        "spend": 173.31,
+        "clicks": 72,
+        "conversions": 5,
+        "cpa": 34.66
+      },
+      "meta": {
+        "spend": 129.98,
+        "clicks": 99,
+        "conversions": 4,
+        "cpa": 32.49
+      },
+      "tiktok": {
+        "spend": 151.65,
+        "clicks": 226,
+        "conversions": 3,
+        "cpa": 50.55
+      },
+      "display": {
+        "spend": 45.06,
+        "clicks": 51,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search has the lowest average CPA at $31.85 with a strong yesterday showing of $28.67, so it earns the largest allocation scaled up to the 30% cap from yesterday's $172. TikTok and Meta remain competitive and stable, warranting steady or modest increases. Display continues to underperform severely at $85.92 average CPA with zero sales yesterday, so it is held near minimum to preserve learnings without wasting budget."
+  },
+  {
+    "day": 7,
+    "allocations": {
+      "search": 195.88,
+      "meta": 165.49,
+      "tiktok": 107.73,
+      "display": 30.9
+    },
+    "results": {
+      "search": {
+        "spend": 195.88,
+        "clicks": 80,
+        "conversions": 6,
+        "cpa": 32.65
+      },
+      "meta": {
+        "spend": 165.49,
+        "clicks": 133,
+        "conversions": 5,
+        "cpa": 33.1
+      },
+      "tiktok": {
+        "spend": 107.73,
+        "clicks": 214,
+        "conversions": 4,
+        "cpa": 26.93
+      },
+      "display": {
+        "spend": 30.9,
+        "clicks": 40,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search and meta hold the strongest 7-day CPAs and deserve the bulk of spend; search is pushed to roughly its 30% increase cap from yesterday's level. TikTok's single-day CPA spike may be noise, but we trim it modestly to protect efficiency while keeping it in the mix. Display is cut sharply after delivering zero sales yesterday and a persistently high 7-day CPA, with a minimal holding budget to preserve trend data."
+  },
+  {
+    "day": 8,
+    "allocations": {
+      "search": 195.0,
+      "meta": 150.0,
+      "tiktok": 125.0,
+      "display": 30.0
+    },
+    "results": {
+      "search": {
+        "spend": 195.0,
+        "clicks": 73,
+        "conversions": 6,
+        "cpa": 32.5
+      },
+      "meta": {
+        "spend": 150.0,
+        "clicks": 112,
+        "conversions": 4,
+        "cpa": 37.5
+      },
+      "tiktok": {
+        "spend": 125.0,
+        "clicks": 324,
+        "conversions": 5,
+        "cpa": 25.0
+      },
+      "display": {
+        "spend": 30.0,
+        "clicks": 38,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search, meta, and tiktok all show stable CPAs in the $26-34 range, making them strong performers worth maintaining. Display continues to underperform with an $85.92 average CPA and zero sales yesterday, so it stays at the floor while we hold position on the three efficient channels. No dramatic shifts warranted given stable trends across the board \u2014 preserving current allocation ratios while keeping display minimal."
+  },
+  {
+    "day": 9,
+    "allocations": {
+      "search": 215.0,
+      "meta": 150.0,
+      "tiktok": 110.0,
+      "display": 25.0
+    },
+    "results": {
+      "search": {
+        "spend": 215.0,
+        "clicks": 92,
+        "conversions": 8,
+        "cpa": 26.88
+      },
+      "meta": {
+        "spend": 150.0,
+        "clicks": 115,
+        "conversions": 4,
+        "cpa": 37.5
+      },
+      "tiktok": {
+        "spend": 110.0,
+        "clicks": 222,
+        "conversions": 3,
+        "cpa": 36.67
+      },
+      "display": {
+        "spend": 25.0,
+        "clicks": 29,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search holds the most consistent CPA at $32.54 and earns a modest budget increase within the 30% daily change limit. TikTok's worsening 7-day trend outweighs yesterday's single-day $25 CPA spike, so spend is trimmed to avoid chasing noise. Display continues to underdeliver with zero sales and a high average CPA, so it is reduced to a floor-level test budget while freed dollars flow to the proven search channel."
+  },
+  {
+    "day": 10,
+    "allocations": {
+      "search": 245.0,
+      "meta": 145.0,
+      "tiktok": 85.0,
+      "display": 25.0
+    },
+    "results": {
+      "search": {
+        "spend": 245.0,
+        "clicks": 105,
+        "conversions": 8,
+        "cpa": 30.62
+      },
+      "meta": {
+        "spend": 145.0,
+        "clicks": 126,
+        "conversions": 5,
+        "cpa": 29.0
+      },
+      "tiktok": {
+        "spend": 85.0,
+        "clicks": 257,
+        "conversions": 4,
+        "cpa": 21.25
+      },
+      "display": {
+        "spend": 25.0,
+        "clicks": 29,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search continues to show the strongest CPA at $26.88 yesterday and a stable improving trend, so I'm pushing it to the 30% cap increase from $215 to $245. TikTok's single-day spike to $36.67 CPA contradicts its 7-day improving trend average of $31.14, so I'm trimming it slightly to $85 to avoid overreacting while monitoring whether the trend holds. Display remains weak with zero sales yesterday and the highest average CPA, so it stays minimized at $25, with remaining budget held in Meta at $145 which is performing adequately but not outpacing search."
+  },
+  {
+    "day": 11,
+    "allocations": {
+      "search": 243.78,
+      "meta": 129.35,
+      "tiktok": 109.45,
+      "display": 17.42
+    },
+    "results": {
+      "search": {
+        "spend": 243.78,
+        "clicks": 99,
+        "conversions": 8,
+        "cpa": 30.47
+      },
+      "meta": {
+        "spend": 129.35,
+        "clicks": 111,
+        "conversions": 5,
+        "cpa": 25.87
+      },
+      "tiktok": {
+        "spend": 109.45,
+        "clicks": 232,
+        "conversions": 3,
+        "cpa": 36.48
+      },
+      "display": {
+        "spend": 17.42,
+        "clicks": 24,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok shows the strongest performance with an improving trend and yesterday's CPA of $21.25, well below its 7-day average, so I'm scaling it up to $110 within the 30% constraint from $85. Display continues to underperform with a $52 avg CPA and zero sales yesterday, so I'm cutting it further to $15 to free up budget. Search remains efficient and stable at $245, while Meta gets a modest trim to $130 as its CPA is slightly higher than search and tiktok."
+  },
+  {
+    "day": 12,
+    "allocations": {
+      "search": 260.41,
+      "meta": 152.32,
+      "tiktok": 75.29,
+      "display": 11.98
+    },
+    "results": {
+      "search": {
+        "spend": 260.41,
+        "clicks": 93,
+        "conversions": 7,
+        "cpa": 37.2
+      },
+      "meta": {
+        "spend": 152.32,
+        "clicks": 112,
+        "conversions": 5,
+        "cpa": 30.46
+      },
+      "tiktok": {
+        "spend": 75.29,
+        "clicks": 216,
+        "conversions": 3,
+        "cpa": 25.1
+      },
+      "display": {
+        "spend": 11.98,
+        "clicks": 13,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the highest-volume, most stable performer and warrants continued priority, while meta showed a strong single-day CPA improvement worth cautiously testing with a modest budget increase. TikTok's CPA has been consistently above search and meta so a trim is warranted, and display has produced zero sales across the campaign window making it the lowest priority for marginal dollars. All changes stay within the 30% daily adjustment cap."
+  },
+  {
+    "day": 13,
+    "allocations": {
+      "search": 187.64,
+      "meta": 195.58,
+      "tiktok": 100.75,
+      "display": 16.03
+    },
+    "results": {
+      "search": {
+        "spend": 187.64,
+        "clicks": 83,
+        "conversions": 7,
+        "cpa": 26.81
+      },
+      "meta": {
+        "spend": 195.58,
+        "clicks": 177,
+        "conversions": 8,
+        "cpa": 24.45
+      },
+      "tiktok": {
+        "spend": 100.75,
+        "clicks": 178,
+        "conversions": 3,
+        "cpa": 33.58
+      },
+      "display": {
+        "spend": 16.03,
+        "clicks": 21,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search CPA has been trending up as spend increased, suggesting saturation near $260/day, so pulling it back to the 30% reduction floor frees capital for better-performing channels. Meta is showing a consistent improving CPA trend and gets a meaningful increase toward its allowable ceiling. TikTok posted the lowest CPA yesterday and scales up to its 30% cap to test whether that efficiency holds at higher spend. Display remains minimal given its persistent zero-sales record, retaining only a small floor to keep conversion data flowing."
+  },
+  {
+    "day": 14,
+    "allocations": {
+      "search": 187.19,
+      "meta": 232.77,
+      "tiktok": 68.4,
+      "display": 11.64
+    },
+    "results": {
+      "search": {
+        "spend": 187.19,
+        "clicks": 71,
+        "conversions": 6,
+        "cpa": 31.2
+      },
+      "meta": {
+        "spend": 232.77,
+        "clicks": 148,
+        "conversions": 6,
+        "cpa": 38.8
+      },
+      "tiktok": {
+        "spend": 68.4,
+        "clicks": 167,
+        "conversions": 3,
+        "cpa": 22.8
+      },
+      "display": {
+        "spend": 11.64,
+        "clicks": 16,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Meta's improving trend and yesterday's strong $24.45 CPA justify pushing it close to its daily increase cap of ~$254. Search remains efficient at its stable CPA and is held near recent levels. TikTok's CPA spiked yesterday and has been above meta and search on average, so I'm trimming it modestly while staying within the 30% change limit, reallocating those dollars to the better-performing channels. Display remains minimal given continued zero sales."
+  },
+  {
+    "day": 15,
+    "allocations": {
+      "search": 227.31,
+      "meta": 170.48,
+      "tiktok": 91.87,
+      "display": 10.34
+    },
+    "results": {
+      "search": {
+        "spend": 227.31,
+        "clicks": 91,
+        "conversions": 7,
+        "cpa": 32.47
+      },
+      "meta": {
+        "spend": 170.48,
+        "clicks": 160,
+        "conversions": 7,
+        "cpa": 24.35
+      },
+      "tiktok": {
+        "spend": 91.87,
+        "clicks": 204,
+        "conversions": 3,
+        "cpa": 30.62
+      },
+      "display": {
+        "spend": 10.34,
+        "clicks": 13,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok continues to show the best average CPA at $28.70 with room to scale slightly from its recent $68-96 range, so I'm increasing it modestly. Meta spiked to $38.80 CPA yesterday and its 7-day average is the worst among converting channels, so I'm holding it flat rather than scaling further to avoid deepening a potential saturation trend. Display has generated zero sales over the observed window and is kept minimal while search holds steady as a reliable mid-tier performer."
+  },
+  {
+    "day": 16,
+    "allocations": {
+      "search": 200.0,
+      "meta": 195.0,
+      "tiktok": 95.0,
+      "display": 10.0
+    },
+    "results": {
+      "search": {
+        "spend": 200.0,
+        "clicks": 84,
+        "conversions": 7,
+        "cpa": 28.57
+      },
+      "meta": {
+        "spend": 195.0,
+        "clicks": 168,
+        "conversions": 7,
+        "cpa": 27.86
+      },
+      "tiktok": {
+        "spend": 95.0,
+        "clicks": 173,
+        "conversions": 2,
+        "cpa": 47.5
+      },
+      "display": {
+        "spend": 10.0,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Meta's 7-day avg CPA is competitive and yesterday's $24.35 CPA suggests room to scale slightly; boosting meta while trimming search modestly improves expected efficiency. TikTok holds steady near meta's CPA level so we maintain its budget, and display is cut further as it continues to produce no sales across the observed period. All changes stay within the 30% daily adjustment constraint."
+  },
+  {
+    "day": 17,
+    "allocations": {
+      "search": 207.31,
+      "meta": 217.18,
+      "tiktok": 65.65,
+      "display": 9.86
+    },
+    "results": {
+      "search": {
+        "spend": 207.31,
+        "clicks": 89,
+        "conversions": 8,
+        "cpa": 25.91
+      },
+      "meta": {
+        "spend": 217.18,
+        "clicks": 153,
+        "conversions": 5,
+        "cpa": 43.44
+      },
+      "tiktok": {
+        "spend": 65.65,
+        "clicks": 195,
+        "conversions": 4,
+        "cpa": 16.41
+      },
+      "display": {
+        "spend": 9.86,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Meta consistently delivers the lowest CPA and warrants increased investment, while TikTok's spike to $47.50 yesterday reinforces its weaker 7-day average relative to search and meta, making a reduction appropriate. Search remains efficient at sub-$29 CPA and holds its allocation near recent levels. Display continues to generate no sales and is held at minimum floor spend."
+  },
+  {
+    "day": 18,
+    "allocations": {
+      "search": 235.0,
+      "meta": 170.0,
+      "tiktok": 85.0,
+      "display": 10.0
+    },
+    "results": {
+      "search": {
+        "spend": 235.0,
+        "clicks": 86,
+        "conversions": 7,
+        "cpa": 33.57
+      },
+      "meta": {
+        "spend": 170.0,
+        "clicks": 153,
+        "conversions": 5,
+        "cpa": 34.0
+      },
+      "tiktok": {
+        "spend": 85.0,
+        "clicks": 210,
+        "conversions": 3,
+        "cpa": 28.33
+      },
+      "display": {
+        "spend": 10.0,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the most reliable performer and gets a modest increase as the campaign backbone. Meta had a poor yesterday and its 7-day average CPA is slightly elevated, so budget is trimmed slightly. TikTok's worsening trend suggests yesterday's strong CPA was likely noise, so it holds roughly flat rather than scaling aggressively. Display continues to generate no sales and is held at minimum spend."
+  },
+  {
+    "day": 19,
+    "allocations": {
+      "search": 223.12,
+      "meta": 152.13,
+      "tiktok": 111.56,
+      "display": 13.19
+    },
+    "results": {
+      "search": {
+        "spend": 223.12,
+        "clicks": 88,
+        "conversions": 7,
+        "cpa": 31.87
+      },
+      "meta": {
+        "spend": 152.13,
+        "clicks": 128,
+        "conversions": 5,
+        "cpa": 30.43
+      },
+      "tiktok": {
+        "spend": 111.56,
+        "clicks": 210,
+        "conversions": 3,
+        "cpa": 37.19
+      },
+      "display": {
+        "spend": 13.19,
+        "clicks": 18,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok maintains the lowest CPA with a stable trend, so I'm scaling it up to the 30% cap from yesterday's $85 to $110. Meta's worsening CPA trend justifies a meaningful reduction from $170 to $150, freeing budget for better-performing channels. Search remains near its current level at $220 as it stays stable, and Display gets a modest increase to $20 to continue testing for potential conversion data."
+  },
+  {
+    "day": 20,
+    "allocations": {
+      "search": 240.0,
+      "meta": 135.0,
+      "tiktok": 115.0,
+      "display": 10.0
+    },
+    "results": {
+      "search": {
+        "spend": 240.0,
+        "clicks": 95,
+        "conversions": 8,
+        "cpa": 30.0
+      },
+      "meta": {
+        "spend": 135.0,
+        "clicks": 100,
+        "conversions": 2,
+        "cpa": 67.5
+      },
+      "tiktok": {
+        "spend": 115.0,
+        "clicks": 230,
+        "conversions": 4,
+        "cpa": 28.75
+      },
+      "display": {
+        "spend": 10.0,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the most stable performer and gets a modest increase within the 30% constraint. Meta's worsening 7-day CPA trend justifies a budget reduction despite yesterday's single-day improvement, which is likely noise. TikTok's improving trend is maintained with a slight hold near current levels, while Display stays minimal given persistent zero sales contribution."
+  },
+  {
+    "day": 21,
+    "allocations": {
+      "search": 270.0,
+      "meta": 95.0,
+      "tiktok": 125.0,
+      "display": 10.0
+    },
+    "results": {
+      "search": {
+        "spend": 270.0,
+        "clicks": 94,
+        "conversions": 8,
+        "cpa": 33.75
+      },
+      "meta": {
+        "spend": 95.0,
+        "clicks": 73,
+        "conversions": 2,
+        "cpa": 47.5
+      },
+      "tiktok": {
+        "spend": 125.0,
+        "clicks": 307,
+        "conversions": 4,
+        "cpa": 31.25
+      },
+      "display": {
+        "spend": 10.0,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Meta's CPA has been worsening for a week and spiked to $67.50 yesterday, so I'm cutting it to near its 30% floor to stop burning budget on poor returns. Search and TikTok are both stable around $30 CPA, so I'm scaling both up within their 30% daily change limits to capture more efficient sales. Display remains minimal at $10 as it continues to show no sales conversions."
+  },
+  {
+    "day": 22,
+    "allocations": {
+      "search": 296.7,
+      "meta": 66.43,
+      "tiktok": 124.88,
+      "display": 11.99
+    },
+    "results": {
+      "search": {
+        "spend": 296.7,
+        "clicks": 101,
+        "conversions": 7,
+        "cpa": 42.39
+      },
+      "meta": {
+        "spend": 66.43,
+        "clicks": 63,
+        "conversions": 1,
+        "cpa": 66.43
+      },
+      "tiktok": {
+        "spend": 124.88,
+        "clicks": 256,
+        "conversions": 4,
+        "cpa": 31.22
+      },
+      "display": {
+        "spend": 11.99,
+        "clicks": 16,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the strongest performer with a stable ~$31 CPA and high volume, so I'm pushing it to the 30% cap from yesterday's $270. Meta's CPA has been worsening consistently to $47.50, well above other channels, so I'm cutting it another 30% from $95 to $66 to reduce waste. TikTok holds steady at ~$31 CPA matching search efficiency, so I'm maintaining its spend while reallocating Meta savings into search."
+  },
+  {
+    "day": 23,
+    "allocations": {
+      "search": 220.35,
+      "meta": 91.24,
+      "tiktok": 171.87,
+      "display": 16.54
+    },
+    "results": {
+      "search": {
+        "spend": 220.35,
+        "clicks": 81,
+        "conversions": 6,
+        "cpa": 36.73
+      },
+      "meta": {
+        "spend": 91.24,
+        "clicks": 74,
+        "conversions": 1,
+        "cpa": 91.24
+      },
+      "tiktok": {
+        "spend": 171.87,
+        "clicks": 342,
+        "conversions": 6,
+        "cpa": 28.64
+      },
+      "display": {
+        "spend": 16.54,
+        "clicks": 23,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok continues to deliver the lowest and most stable CPA (~$31) while search is worsening and yesterday hit $42.39 CPA, so I'm cutting search to its 30% floor and maximizing TikTok's budget. Meta's CPA trend is also worsening with a very poor single-sale day at $66.43, so it stays near minimum. Display gets a small bump to test whether it can generate any conversions with slightly more budget, rather than leaving money on the table."
+  },
+  {
+    "day": 24,
+    "allocations": {
+      "search": 200.23,
+      "meta": 64.07,
+      "tiktok": 223.69,
+      "display": 12.01
+    },
+    "results": {
+      "search": {
+        "spend": 200.23,
+        "clicks": 79,
+        "conversions": 6,
+        "cpa": 33.37
+      },
+      "meta": {
+        "spend": 64.07,
+        "clicks": 59,
+        "conversions": 1,
+        "cpa": 64.07
+      },
+      "tiktok": {
+        "spend": 223.69,
+        "clicks": 303,
+        "conversions": 4,
+        "cpa": 55.92
+      },
+      "display": {
+        "spend": 12.01,
+        "clicks": 15,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok remains the strongest performer with a stable $28.83 CPA, so it's scaled to its maximum allowable level. Meta's CPA spiked to $91.24 yesterday with a worsening multi-day trend, warranting a significant cut to the 30% floor. Search is also worsening and trimmed modestly to free budget for TikTok, while Display is held minimal given continued zero sales."
+  },
+  {
+    "day": 25,
+    "allocations": {
+      "search": 253.97,
+      "meta": 81.36,
+      "tiktok": 152.95,
+      "display": 11.72
+    },
+    "results": {
+      "search": {
+        "spend": 253.97,
+        "clicks": 96,
+        "conversions": 8,
+        "cpa": 31.75
+      },
+      "meta": {
+        "spend": 81.36,
+        "clicks": 67,
+        "conversions": 1,
+        "cpa": 81.36
+      },
+      "tiktok": {
+        "spend": 152.95,
+        "clicks": 295,
+        "conversions": 3,
+        "cpa": 50.98
+      },
+      "display": {
+        "spend": 11.72,
+        "clicks": 16,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search holds the best consistent CPA (~$34) and gets a modest increase as the most reliable performer. TikTok is cut significantly from yesterday's $224 spend after its CPA nearly doubled to $55.92\u2014our own scaling appears to be causing saturation, so pulling back tests whether efficiency recovers. Meta stays reduced given its persistent high CPA, and display holds minimal spend to maintain tracking data."
+  },
+  {
+    "day": 26,
+    "allocations": {
+      "search": 328.51,
+      "meta": 56.74,
+      "tiktok": 106.58,
+      "display": 8.17
+    },
+    "results": {
+      "search": {
+        "spend": 328.51,
+        "clicks": 123,
+        "conversions": 11,
+        "cpa": 29.86
+      },
+      "meta": {
+        "spend": 56.74,
+        "clicks": 52,
+        "conversions": 1,
+        "cpa": 56.74
+      },
+      "tiktok": {
+        "spend": 106.58,
+        "clicks": 240,
+        "conversions": 3,
+        "cpa": 35.53
+      },
+      "display": {
+        "spend": 8.17,
+        "clicks": 10,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search continues to deliver the best CPA at $31.75 yesterday and a stable 7-day average around $34, so we push it to its maximum allowable increase from $254 (capped at ~30% up). Meta's CPA has worsened to $81 with only 1 sale yesterday, so we cut it near its 30% floor from $81 to $57. TikTok's CPA has been drifting up to $51 yesterday versus its 7-day average, suggesting saturation as we scaled it, so we trim it down ~30% from $153 to $107. Display remains minimal given no attributable sales."
+  },
+  {
+    "day": 27,
+    "allocations": {
+      "search": 366.37,
+      "meta": 54.96,
+      "tiktok": 71.93,
+      "display": 6.74
+    },
+    "results": {
+      "search": {
+        "spend": 366.37,
+        "clicks": 116,
+        "conversions": 10,
+        "cpa": 36.64
+      },
+      "meta": {
+        "spend": 54.96,
+        "clicks": 43,
+        "conversions": 1,
+        "cpa": 54.96
+      },
+      "tiktok": {
+        "spend": 71.93,
+        "clicks": 176,
+        "conversions": 3,
+        "cpa": 23.98
+      },
+      "display": {
+        "spend": 6.74,
+        "clicks": 9,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search continues to improve with a strong CPA of $29.86 yesterday and a 7-day trend that keeps getting better, so I'm pushing it to its 30% ceiling from yesterday's $328.51 spend. TikTok's CPA has been worsening over 7 days and yesterday's result was mediocre, so I'm cutting it aggressively to test whether reduced spend stabilizes its CPA before any future reinvestment. Meta and display remain minimal given Meta's persistently high CPA and display's inability to generate sales."
+  },
+  {
+    "day": 28,
+    "allocations": {
+      "search": 338.97,
+      "meta": 49.2,
+      "tiktok": 102.25,
+      "display": 9.58
+    },
+    "results": {
+      "search": {
+        "spend": 338.97,
+        "clicks": 116,
+        "conversions": 10,
+        "cpa": 33.9
+      },
+      "meta": {
+        "spend": 49.2,
+        "clicks": 37,
+        "conversions": 1,
+        "cpa": 49.2
+      },
+      "tiktok": {
+        "spend": 102.25,
+        "clicks": 293,
+        "conversions": 5,
+        "cpa": 20.45
+      },
+      "display": {
+        "spend": 9.58,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the highest-volume stable performer at $34.93 avg CPA and receives the largest allocation, though trimmed slightly from yesterday's elevated level. TikTok's strong 7-day average and encouraging yesterday CPA justify a healthy allocation, scaled up within the 30% constraint. Meta's persistently high $66.04 avg CPA warrants continued reduction, and display stays minimal with zero sales to show."
+  },
+  {
+    "day": 29,
+    "allocations": {
+      "search": 297.26,
+      "meta": 51.11,
+      "tiktok": 138.64,
+      "display": 12.99
+    },
+    "results": {
+      "search": {
+        "spend": 297.26,
+        "clicks": 98,
+        "conversions": 8,
+        "cpa": 37.16
+      },
+      "meta": {
+        "spend": 51.11,
+        "clicks": 43,
+        "conversions": 1,
+        "cpa": 51.11
+      },
+      "tiktok": {
+        "spend": 138.64,
+        "clicks": 227,
+        "conversions": 4,
+        "cpa": 34.66
+      },
+      "display": {
+        "spend": 12.99,
+        "clicks": 15,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok showed an excellent CPA of $20.45 yesterday with an improving trend, so we push it up to the 30% cap from yesterday's spend. Search remains the volume anchor at a solid $33.90 CPA and holds near its recent average. Meta's 7-day CPA of $66.29 is poor relative to other channels, so we hold it flat at yesterday's level while its improving trend plays out. Display gets a modest increase to test whether it can generate conversions with slightly more budget, as it's been starved of meaningful spend."
+  },
+  {
+    "day": 30,
+    "allocations": {
+      "search": 294.95,
+      "meta": 35.99,
+      "tiktok": 159.97,
+      "display": 9.09
+    },
+    "results": {
+      "search": {
+        "spend": 294.95,
+        "clicks": 109,
+        "conversions": 9,
+        "cpa": 32.77
+      },
+      "meta": {
+        "spend": 35.99,
+        "clicks": 28,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 159.97,
+        "clicks": 353,
+        "conversions": 5,
+        "cpa": 31.99
+      },
+      "display": {
+        "spend": 9.09,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the volume anchor with stable low CPA, so it holds near current spend while tiktok gets a meaningful scale-up given its improving trend and competitive CPA. Meta is cut to the 30% floor as its CPA remains nearly double search/tiktok despite improvement, and display is reduced to minimum as it has generated zero sales across the campaign. With 15 days left, capital concentration in proven performers is the priority."
+  },
+  {
+    "day": 31,
+    "allocations": {
+      "search": 295.0,
+      "meta": 37.0,
+      "tiktok": 159.0,
+      "display": 9.0
+    },
+    "results": {
+      "search": {
+        "spend": 295.0,
+        "clicks": 105,
+        "conversions": 9,
+        "cpa": 32.78
+      },
+      "meta": {
+        "spend": 37.0,
+        "clicks": 31,
+        "conversions": 1,
+        "cpa": 37.0
+      },
+      "tiktok": {
+        "spend": 159.0,
+        "clicks": 251,
+        "conversions": 4,
+        "cpa": 39.75
+      },
+      "display": {
+        "spend": 9.0,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the highest-volume, stable-CPA channel and warrants continued heavy investment near current spend levels. TikTok's improving trend and competitive CPA justify maintaining its current allocation rather than cutting after a single strong day. Meta stays at a minimal floor given its improving 7-day trend despite yesterday's zero-sale anomaly, while display remains near-zero with no demonstrated sales contribution."
+  },
+  {
+    "day": 32,
+    "allocations": {
+      "search": 310.0,
+      "meta": 48.0,
+      "tiktok": 133.0,
+      "display": 9.0
+    },
+    "results": {
+      "search": {
+        "spend": 310.0,
+        "clicks": 113,
+        "conversions": 9,
+        "cpa": 34.44
+      },
+      "meta": {
+        "spend": 48.0,
+        "clicks": 38,
+        "conversions": 1,
+        "cpa": 48.0
+      },
+      "tiktok": {
+        "spend": 133.0,
+        "clicks": 211,
+        "conversions": 3,
+        "cpa": 44.33
+      },
+      "display": {
+        "spend": 9.0,
+        "clicks": 13,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search remains the efficiency anchor at ~$33 CPA and gets the bulk of budget; meta showed a strong $37 CPA yesterday against a worsening 7-day avg suggesting genuine improvement, so we nudge it up modestly within constraints. TikTok's worsening trend and rising CPA as spend increased signals saturation, so we trim it slightly while staying within the 30% change limit from yesterday's $159 spend. Display stays minimal with zero sales contribution."
+  },
+  {
+    "day": 33,
+    "allocations": {
+      "search": 330.0,
+      "meta": 58.0,
+      "tiktok": 103.0,
+      "display": 9.0
+    },
+    "results": {
+      "search": {
+        "spend": 330.0,
+        "clicks": 103,
+        "conversions": 8,
+        "cpa": 41.25
+      },
+      "meta": {
+        "spend": 58.0,
+        "clicks": 45,
+        "conversions": 1,
+        "cpa": 58.0
+      },
+      "tiktok": {
+        "spend": 103.0,
+        "clicks": 283,
+        "conversions": 5,
+        "cpa": 20.6
+      },
+      "display": {
+        "spend": 9.0,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search continues to deliver the best reliable CPA at scale and remains the core channel; TikTok's worsening trend and yesterday's spike to $44.33 CPA signals saturation, so I'm reducing it toward the 30% max decrease to test whether efficiency recovers at lower spend. Meta's improving trend warrants a modest increase to explore its upside, while Display stays minimal with no confirmed sales attribution."
+  },
+  {
+    "day": 34,
+    "allocations": {
+      "search": 310.06,
+      "meta": 45.01,
+      "tiktok": 133.93,
+      "display": 11.0
+    },
+    "results": {
+      "search": {
+        "spend": 310.06,
+        "clicks": 117,
+        "conversions": 10,
+        "cpa": 31.01
+      },
+      "meta": {
+        "spend": 45.01,
+        "clicks": 39,
+        "conversions": 1,
+        "cpa": 45.01
+      },
+      "tiktok": {
+        "spend": 133.93,
+        "clicks": 290,
+        "conversions": 3,
+        "cpa": 44.64
+      },
+      "display": {
+        "spend": 11.0,
+        "clicks": 15,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok delivered an exceptional $20.60 CPA yesterday, well below its 7-day average, suggesting a real buying signal worth capturing in the final stretch of the campaign. Search remains the backbone at stable CPAs and gets a slight trim to fund TikTok's increase, while Meta continues to underperform and is reduced further. Display stays minimal with no confirmed sales conversions."
+  },
+  {
+    "day": 35,
+    "allocations": {
+      "search": 361.95,
+      "meta": 42.69,
+      "tiktok": 87.01,
+      "display": 8.35
+    },
+    "results": {
+      "search": {
+        "spend": 361.95,
+        "clicks": 122,
+        "conversions": 11,
+        "cpa": 32.9
+      },
+      "meta": {
+        "spend": 42.69,
+        "clicks": 32,
+        "conversions": 1,
+        "cpa": 42.69
+      },
+      "tiktok": {
+        "spend": 87.01,
+        "clicks": 175,
+        "conversions": 3,
+        "cpa": 29.0
+      },
+      "display": {
+        "spend": 8.35,
+        "clicks": 10,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search continues to be the strongest channel with a stable 7-day CPA of $34.76 and a strong $31.01 yesterday, so I'm scaling it up near the 30% daily increase cap to maximize returns in the final stretch. TikTok's yesterday CPA spiked to $44.64, and while partly noise, trimming spend tests whether our own budget was causing saturation at ~$133/day. Meta and display remain weak and are held at minimal levels to avoid wasting budget in the campaign's final 10 days."
+  },
+  {
+    "day": 36,
+    "allocations": {
+      "search": 351.0,
+      "meta": 30.0,
+      "tiktok": 113.0,
+      "display": 6.0
+    },
+    "results": {
+      "search": {
+        "spend": 351.0,
+        "clicks": 109,
+        "conversions": 9,
+        "cpa": 39.0
+      },
+      "meta": {
+        "spend": 30.0,
+        "clicks": 23,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 113.0,
+        "clicks": 298,
+        "conversions": 5,
+        "cpa": 22.6
+      },
+      "display": {
+        "spend": 6.0,
+        "clicks": 7,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok is showing a strong improving trend with yesterday's CPA at $29, well below the campaign average, so scaling it to its 30% cap ceiling is warranted. Search remains the volume anchor with consistent $33-35 CPA, holding near current levels. Meta at ~$47 CPA with only 1 sale yesterday and Display with zero conversions are held at minimums to free budget for the stronger performers in these final 10 days."
+  },
+  {
+    "day": 37,
+    "allocations": {
+      "search": 347.0,
+      "meta": 21.0,
+      "tiktok": 125.0,
+      "display": 7.0
+    },
+    "results": {
+      "search": {
+        "spend": 347.0,
+        "clicks": 110,
+        "conversions": 8,
+        "cpa": 43.38
+      },
+      "meta": {
+        "spend": 21.0,
+        "clicks": 19,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 125.0,
+        "clicks": 229,
+        "conversions": 4,
+        "cpa": 31.25
+      },
+      "display": {
+        "spend": 7.0,
+        "clicks": 9,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "With 8 days remaining, TikTok's 7-day CPA of $33.27 and yesterday's strong $22.60 result justify holding it near its recent level at $125, while Search remains the volume anchor at $347 given its stable $34.88 average CPA. Meta's persistent $46.14 CPA warrants keeping it at the minimum allowed ($21), and Display stays minimal at $7 with no confirmed sales contribution."
+  },
+  {
+    "day": 38,
+    "allocations": {
+      "search": 320.0,
+      "meta": 22.0,
+      "tiktok": 151.0,
+      "display": 7.0
+    },
+    "results": {
+      "search": {
+        "spend": 320.0,
+        "clicks": 100,
+        "conversions": 7,
+        "cpa": 45.71
+      },
+      "meta": {
+        "spend": 22.0,
+        "clicks": 20,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 151.0,
+        "clicks": 293,
+        "conversions": 5,
+        "cpa": 30.2
+      },
+      "display": {
+        "spend": 7.0,
+        "clicks": 9,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok continues to show the best and improving CPA, so I'm scaling it up toward its 30% cap while trimming search slightly given yesterday's elevated CPA of $43.38 \u2014 though I'm not overreacting as search's 7-day trend remains stable. Meta and display remain at minimal levels given persistent zero-conversion days and limited budget remaining in the campaign."
+  },
+  {
+    "day": 39,
+    "allocations": {
+      "search": 248.28,
+      "meta": 24.38,
+      "tiktok": 217.25,
+      "display": 10.09
+    },
+    "results": {
+      "search": {
+        "spend": 248.28,
+        "clicks": 92,
+        "conversions": 7,
+        "cpa": 35.47
+      },
+      "meta": {
+        "spend": 24.38,
+        "clicks": 23,
+        "conversions": 1,
+        "cpa": 24.38
+      },
+      "tiktok": {
+        "spend": 217.25,
+        "clicks": 416,
+        "conversions": 7,
+        "cpa": 31.04
+      },
+      "display": {
+        "spend": 10.09,
+        "clicks": 12,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search CPA has been worsening consistently and yesterday hit $45.71\u2014well above TikTok's $30.20\u2014so I'm reducing search from $320 to $224 (the 30% daily max reduction). TikTok remains the strongest performer with a stable, low CPA, so I'm scaling it up from $151 to $196 (the 30% daily max increase) to capture more efficient sales in the final week. Remaining budget is distributed to hold meta steady and modestly increase display to test for conversions, keeping total at exactly $500."
+  },
+  {
+    "day": 40,
+    "allocations": {
+      "search": 174.66,
+      "meta": 31.81,
+      "tiktok": 283.49,
+      "display": 10.04
+    },
+    "results": {
+      "search": {
+        "spend": 174.66,
+        "clicks": 64,
+        "conversions": 5,
+        "cpa": 34.93
+      },
+      "meta": {
+        "spend": 31.81,
+        "clicks": 30,
+        "conversions": 1,
+        "cpa": 31.81
+      },
+      "tiktok": {
+        "spend": 283.49,
+        "clicks": 444,
+        "conversions": 6,
+        "cpa": 47.25
+      },
+      "display": {
+        "spend": 10.04,
+        "clicks": 14,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok remains the most cost-efficient channel at ~$30 CPA with a stable trend, so I'm pushing it to its 30% increase ceiling from yesterday's spend. Search continues to worsen despite dominant budget share, so I'm cutting it to its 30% floor to redirect dollars to better-performing channels. Meta's improving trend and strong yesterday CPA justify a modest increase to its 30% ceiling, while display stays minimal given no measurable sales contribution."
+  },
+  {
+    "day": 41,
+    "allocations": {
+      "search": 236.71,
+      "meta": 42.75,
+      "tiktok": 206.93,
+      "display": 13.61
+    },
+    "results": {
+      "search": {
+        "spend": 236.71,
+        "clicks": 104,
+        "conversions": 9,
+        "cpa": 26.3
+      },
+      "meta": {
+        "spend": 42.75,
+        "clicks": 40,
+        "conversions": 1,
+        "cpa": 42.75
+      },
+      "tiktok": {
+        "spend": 206.93,
+        "clicks": 382,
+        "conversions": 5,
+        "cpa": 41.39
+      },
+      "display": {
+        "spend": 13.61,
+        "clicks": 19,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "TikTok's CPA has been worsening all week and spiked to $47.25 yesterday \u2014 well above search and meta \u2014 so I'm cutting it to the 30% floor to stop wasting spend in the final stretch. Search and meta both show strong, efficient CPAs so I've pushed them toward their maximums. Display is allocated the residual budget as it remains unproven but provides minimal drag."
+  },
+  {
+    "day": 42,
+    "allocations": {
+      "search": 307.89,
+      "meta": 35.02,
+      "tiktok": 145.08,
+      "display": 12.01
+    },
+    "results": {
+      "search": {
+        "spend": 307.89,
+        "clicks": 117,
+        "conversions": 10,
+        "cpa": 30.79
+      },
+      "meta": {
+        "spend": 35.02,
+        "clicks": 27,
+        "conversions": 1,
+        "cpa": 35.02
+      },
+      "tiktok": {
+        "spend": 145.08,
+        "clicks": 225,
+        "conversions": 4,
+        "cpa": 36.27
+      },
+      "display": {
+        "spend": 12.01,
+        "clicks": 16,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search is delivering its best CPA of the campaign at $26.30 yesterday with an improving trend, so I'm maximizing it to the 30% increase cap. TikTok is worsening and showed a CPA spike to $41.39 yesterday, so I'm cutting it to the 30% reduction floor to reallocate dollars to the stronger channel. Meta and display are held minimal \u2014 display has produced no sales and meta's single-sale day suggests diminishing value at higher spend with only 3 days left."
+  },
+  {
+    "day": 43,
+    "allocations": {
+      "search": 372.75,
+      "meta": 23.3,
+      "tiktok": 94.64,
+      "display": 9.31
+    },
+    "results": {
+      "search": {
+        "spend": 372.75,
+        "clicks": 127,
+        "conversions": 10,
+        "cpa": 37.27
+      },
+      "meta": {
+        "spend": 23.3,
+        "clicks": 18,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 94.64,
+        "clicks": 198,
+        "conversions": 2,
+        "cpa": 47.32
+      },
+      "display": {
+        "spend": 9.31,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search is delivering the best CPA at $30.79 and trending strongly improving, so with only 2 days left we maximize allocation there up to the 30% daily change limit from yesterday's $307.89 (ceiling ~$400). TikTok's CPA is worsening and we've been scaling it, suggesting saturation, so we cut it to the 30% floor (~$101, but we can go lower by stepping down gradually\u2014yesterday was $145 so floor is ~$102, rounding to maintain sum). Display and meta receive minimal spend as neither is performing meaningfully, preserving budget for the proven search channel to close the campaign strong."
+  },
+  {
+    "day": 44,
+    "allocations": {
+      "search": 411.56,
+      "meta": 16.66,
+      "tiktok": 64.92,
+      "display": 6.86
+    },
+    "results": {
+      "search": {
+        "spend": 411.56,
+        "clicks": 135,
+        "conversions": 12,
+        "cpa": 34.3
+      },
+      "meta": {
+        "spend": 16.66,
+        "clicks": 13,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 64.92,
+        "clicks": 154,
+        "conversions": 3,
+        "cpa": 21.64
+      },
+      "display": {
+        "spend": 6.86,
+        "clicks": 9,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "Search has the best and improving CPA trend, making it the clear priority for this penultimate day; I'm pushing it to near-maximum within the 30% increase rule from yesterday's $372.75 spend. TikTok is cut by ~41% \u2014 but wait, the 30% rule limits reduction to $66 minimum from $94.64, so I'm setting TikTok to $66 and redistributing accordingly. Meta and display remain minimal as both showed zero sales yesterday with worsening or flat trends."
+  },
+  {
+    "day": 45,
+    "allocations": {
+      "search": 361.47,
+      "meta": 26.54,
+      "tiktok": 103.41,
+      "display": 8.58
+    },
+    "results": {
+      "search": {
+        "spend": 361.47,
+        "clicks": 109,
+        "conversions": 10,
+        "cpa": 36.15
+      },
+      "meta": {
+        "spend": 26.54,
+        "clicks": 20,
+        "conversions": 0,
+        "cpa": null
+      },
+      "tiktok": {
+        "spend": 103.41,
+        "clicks": 210,
+        "conversions": 3,
+        "cpa": 34.47
+      },
+      "display": {
+        "spend": 8.58,
+        "clicks": 11,
+        "conversions": 0,
+        "cpa": null
+      }
+    },
+    "reasoning": "This is the final day of the campaign, so the priority is holding proven allocations steady rather than making risky changes. Search remains the highest-volume performer with a consistent ~$35 CPA, while TikTok showed a strong $21.64 CPA yesterday and merits maintaining its spend near recent averages. Meta and display stay minimal given their ongoing inability to generate confirmed sales."
+  }
+]
