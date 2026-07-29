@@ -97,6 +97,18 @@ Then copy the output files into `dashboard/public/` (matching the names
 refresh the dashboard — every number on the page is derived from these files
 at load time, no rebuild needed.
 
+## Results
+
+| | Baseline | Agent v1 | Agent v2 |
+|---|---|---|---|
+| Total sales | 541 | 617 | **642** |
+| Overall CPA | $41.59 | $36.47 | **$35.05** |
+| Post-shock CPA (d20–45) | $44.67 | $39.63 | **$36.83** |
+| Decision parse rate | — | 89% | **100%** |
+
+Same $22,500 budget. Same market. Same day-20 shock. Only the decisions
+differ.
+
 ## Findings
 
 ### Shock detection worked
