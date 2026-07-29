@@ -1,5 +1,7 @@
 # Ad-Buying Agent
 
+![Dashboard demo](dashboard.gif)
+
 An LLM agent manages a simulated $500/day ad budget across 4 channels for a
 45-day campaign, benchmarked against a static even-split baseline and an
 earlier agent version. See [`dashboard/`](dashboard/) for the results
