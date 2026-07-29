@@ -2,7 +2,7 @@
 
 ![Dashboard demo](dashboard.gif)
 
-LIVE DASHBAORD: ad-buying-agent.vercel.app 
+**LIVE DASHBOARD: [ad-buying-agent.vercel.app](https://ad-buying-agent.vercel.app)**
 
 An LLM agent manages a simulated $500/day ad budget across 4 channels for a
 45-day campaign, benchmarked against a static even-split baseline and an
