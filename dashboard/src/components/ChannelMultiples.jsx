@@ -17,6 +17,12 @@ const NOTES = {
   display: "no sales → no CPA",
 };
 
+// Meta has a handful of scattered zero-sale days late in the campaign —
+// breaking the line there reads as a rendering bug, so bridge them.
+// Display is *mostly* zero-sale days, where the gaps are the honest story
+// (see its note above), so it stays un-bridged.
+const CONNECT_NULLS = new Set(["meta"]);
+
 function MiniTooltip({ active, payload, label }) {
   if (!active || !payload || !payload.length) return null;
   const spend = payload.find((p) => p.dataKey === "spend")?.value;
@@ -75,6 +81,7 @@ function Mini({ channel, data, note }) {
             stroke={CHANNEL_COLOR[channel]}
             strokeWidth={1.75}
             dot={false}
+            connectNulls={CONNECT_NULLS.has(channel)}
             animationDuration={ANIM}
           />
         </ComposedChart>
