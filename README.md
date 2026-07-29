@@ -8,6 +8,40 @@ An LLM agent (**Claude Sonnet 4.6**, `claude-sonnet-4-6`) manages a simulated
 $500/day ad budget across 4 channels for a 45-day campaign, benchmarked
 against a static even-split baseline and an earlier agent version.
 
+## Results
+
+| | Baseline | Agent v1 | Agent v2 |
+|---|---|---|---|
+| Total sales | 541 | 617 | **642** |
+| Overall CPA | $41.59 | $36.47 | **$35.05** |
+| Post-shock CPA (d20–45) | $44.67 | $39.63 | **$36.83** |
+| Decision parse rate | — | 89% | **100%** |
+
+Same $22,500 budget. Same market. Same day-20 shock. Only the decisions
+differ.
+
+## Findings
+
+### Shock detection worked
+On day 20 the simulator secretly halves meta's conversion rate. The agent
+flagged the CPA spike within a day and cut meta spend from ~$246 to ~$65 over
+four days. The baseline kept feeding the broken channel $125/day for the
+remaining 26 days.
+
+### v1 was blind to saturation it caused itself
+v1 scaled search spend from $150 to $415/day while search's CPA drifted from
+$31 to $50 — and never formed the hypothesis that its own spending was the
+cause. Great at detecting external shocks, blind to self-inflicted damage.
+
+### Two changes fixed it
+- **A one-line prompt hint** ("if a channel's CPA rises as you increase its
+  spend, it may be saturated") gave v2 the missing hypothesis. On day 13 it
+  estimated search's saturation point at ~$260/day — the hidden value is
+  $250.
+- **A tolerant JSON parser**, not a stricter prompt, fixed the real
+  reliability problem: the model wasn't failing, it was emitting valid JSON
+  *after* a prose preamble. This took decision reliability from 89% to 100%.
+
 ## Architecture
 
 ```
@@ -96,40 +130,6 @@ Then copy the output files into `dashboard/public/` (matching the names
 `baseline_log.json`, `campaign_log_v1.json`, `campaign_log_v2.json`) and
 refresh the dashboard — every number on the page is derived from these files
 at load time, no rebuild needed.
-
-## Results
-
-| | Baseline | Agent v1 | Agent v2 |
-|---|---|---|---|
-| Total sales | 541 | 617 | **642** |
-| Overall CPA | $41.59 | $36.47 | **$35.05** |
-| Post-shock CPA (d20–45) | $44.67 | $39.63 | **$36.83** |
-| Decision parse rate | — | 89% | **100%** |
-
-Same $22,500 budget. Same market. Same day-20 shock. Only the decisions
-differ.
-
-## Findings
-
-### Shock detection worked
-On day 20 the simulator secretly halves meta's conversion rate. The agent
-flagged the CPA spike within a day and cut meta spend from ~$246 to ~$65 over
-four days. The baseline kept feeding the broken channel $125/day for the
-remaining 26 days.
-
-### v1 was blind to saturation it caused itself
-v1 scaled search spend from $150 to $415/day while search's CPA drifted from
-$31 to $50 — and never formed the hypothesis that its own spending was the
-cause. Great at detecting external shocks, blind to self-inflicted damage.
-
-### Two changes fixed it
-- **A one-line prompt hint** ("if a channel's CPA rises as you increase its
-  spend, it may be saturated") gave v2 the missing hypothesis. On day 13 it
-  estimated search's saturation point at ~$260/day — the hidden value is
-  $250.
-- **A tolerant JSON parser**, not a stricter prompt, fixed the real
-  reliability problem: the model wasn't failing, it was emitting valid JSON
-  *after* a prose preamble. This took decision reliability from 89% to 100%.
 
 ## Limitations
 
