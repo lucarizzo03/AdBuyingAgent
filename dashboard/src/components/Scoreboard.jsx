@@ -7,7 +7,13 @@ const ROWS = [
   { key: "parseRate", label: "Decision parse rate", fmt: (v) => (v == null ? "—" : fmtPct(v * 100)) },
 ];
 
-function Column({ title, stats, accent }) {
+function signedPct(n) {
+  if (n == null || Number.isNaN(n)) return "—";
+  const rounded = Math.round(n);
+  return `${rounded > 0 ? "+" : ""}${rounded}%`;
+}
+
+function Column({ title, stats, accent, delta }) {
   return (
     <div
       style={{
@@ -30,6 +36,19 @@ function Column({ title, stats, accent }) {
       >
         {title}
       </div>
+      {delta && (
+        <div
+          className="mono"
+          style={{
+            fontSize: 11.5,
+            color: "var(--accent)",
+            marginTop: -8,
+            marginBottom: 12,
+          }}
+        >
+          {delta}
+        </div>
+      )}
       {ROWS.map((row) => (
         <div
           key={row.key}
@@ -65,6 +84,10 @@ export default function Scoreboard({ baseline, v1, v2 }) {
   const totalBudget = summarize(baseline).spend;
   const shockDay = 20;
 
+  const salesDeltaPct = ((v2Stats.totalSales - baselineStats.totalSales) / baselineStats.totalSales) * 100;
+  const cpaDeltaPct = ((v2Stats.overallCpa - baselineStats.overallCpa) / baselineStats.overallCpa) * 100;
+  const v2Delta = `${signedPct(salesDeltaPct)} sales · ${signedPct(cpaDeltaPct)} CPA vs baseline`;
+
   return (
     <section className="section">
       <div
@@ -76,7 +99,7 @@ export default function Scoreboard({ baseline, v1, v2 }) {
       >
         <Column title="Baseline" stats={baselineStats} />
         <Column title="Agent v1" stats={v1Stats} />
-        <Column title="Agent v2" stats={v2Stats} accent />
+        <Column title="Agent v2" stats={v2Stats} accent delta={v2Delta} />
       </div>
       <p
         style={{

@@ -1,7 +1,8 @@
 import {
   ResponsiveContainer,
-  LineChart,
+  ComposedChart,
   Line,
+  Area,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -13,6 +14,7 @@ import { mergeSeries, buildSeries, SHOCK_DAY, SHOCK_LABEL, fmtInt } from "../lib
 import { getAnimationDuration } from "../lib/motion";
 import MultiLineTooltip from "./MultiLineTooltip";
 import EndLabelsLayer from "./EndLabelsLayer";
+import GapLabel from "./GapLabel";
 
 const ANIM = getAnimationDuration();
 
@@ -24,9 +26,12 @@ export default function HeroChart({ logs }) {
       v2: buildSeries(logs.v2),
     },
     "cumConversions"
-  );
+  ).map((pt) => ({ ...pt, gapRange: [pt.baseline, pt.v2] }));
 
   const last = series[series.length - 1];
+  const gap = last.v2 - last.baseline;
+  // Label the band at ~70% along x, where it's widest and clear of the day-20 annotation.
+  const gapLabelDay = series[Math.round(series.length * 0.7)]?.day ?? last.day;
 
   return (
     <section className="section">
@@ -38,7 +43,7 @@ export default function HeroChart({ logs }) {
       </div>
       <div className="card" style={{ padding: "20px 8px 12px 8px" }}>
         <ResponsiveContainer width="100%" height={340}>
-          <LineChart data={series} margin={{ top: 8, right: 84, left: 4, bottom: 0 }}>
+          <ComposedChart data={series} margin={{ top: 8, right: 84, left: 4, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke="var(--border)" strokeDasharray="0" />
             <XAxis
               dataKey="day"
@@ -66,6 +71,15 @@ export default function HeroChart({ logs }) {
                 fill: "var(--ink-muted)",
                 offset: 8,
               }}
+            />
+            <Area
+              type="monotone"
+              dataKey="gapRange"
+              stroke="none"
+              fill="var(--accent)"
+              fillOpacity={0.14}
+              isAnimationActive
+              animationDuration={ANIM}
             />
             <Line
               type="monotone"
@@ -103,7 +117,15 @@ export default function HeroChart({ logs }) {
                 { key: "v2", day: last.day, value: last.v2, label: "Agent v2", color: "var(--accent)" },
               ]}
             />
-          </LineChart>
+            <Customized
+              component={GapLabel}
+              day={gapLabelDay}
+              lowValue={series[Math.round(series.length * 0.7)]?.baseline}
+              highValue={series[Math.round(series.length * 0.7)]?.v2}
+              text={`+${fmtInt(gap)} sales`}
+              color="var(--accent)"
+            />
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
     </section>

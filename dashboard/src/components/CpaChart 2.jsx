@@ -8,12 +8,12 @@ import {
   CartesianGrid,
   Tooltip,
   ReferenceLine,
-  Customized,
+  ReferenceDot,
 } from "recharts";
 import { mergeSeries, buildSeries, trailingAverage, SHOCK_DAY, SHOCK_LABEL, fmtDollar } from "../lib/stats";
 import { getAnimationDuration } from "../lib/motion";
 import MultiLineTooltip from "./MultiLineTooltip";
-import EndLabelsLayer from "./EndLabelsLayer";
+import EndLabel from "./EndLabel";
 
 const fmtCpa = (v) => fmtDollar(v, { decimals: 2 });
 const ANIM = getAnimationDuration();
@@ -82,10 +82,6 @@ export default function CpaChart({ logs }) {
               tick={{ fontSize: 11, fill: "var(--ink-faint)", fontFamily: "var(--font-mono)" }}
               width={40}
               tickFormatter={(v) => `$${v}`}
-              domain={[
-                (dataMin) => Math.max(0, Math.floor((dataMin - 3) / 5) * 5),
-                (dataMax) => Math.ceil((dataMax + 3) / 5) * 5,
-              ]}
             />
             <Tooltip content={<MultiLineTooltip fmt={fmtCpa} />} />
             <ReferenceLine
@@ -103,14 +99,26 @@ export default function CpaChart({ logs }) {
             <Line type="monotone" dataKey="baseline" stroke="var(--baseline)" strokeWidth={1.75} dot={false} animationDuration={ANIM} />
             <Line type="monotone" dataKey="v1" stroke="var(--v1)" strokeWidth={1.75} dot={false} animationDuration={ANIM} />
             <Line type="monotone" dataKey="v2" stroke="var(--accent)" strokeWidth={2.5} dot={false} animationDuration={ANIM} />
-            <Customized
-              component={EndLabelsLayer}
-              endFmt={fmtCpa}
-              endPoints={[
-                { key: "baseline", day: last.day, value: last.baseline, label: "Baseline", color: "var(--baseline)" },
-                { key: "v1", day: last.day, value: last.v1, label: "Agent v1", color: "var(--v1)" },
-                { key: "v2", day: last.day, value: last.v2, label: "Agent v2", color: "var(--accent)" },
-              ]}
+            <ReferenceDot
+              x={last.day}
+              y={last.baseline}
+              r={0}
+              isFront
+              label={(p) => <EndLabel viewBox={p.viewBox} text="Baseline" value={fmtCpa(last.baseline)} color="var(--baseline)" />}
+            />
+            <ReferenceDot
+              x={last.day}
+              y={last.v1}
+              r={0}
+              isFront
+              label={(p) => <EndLabel viewBox={p.viewBox} text="Agent v1" value={fmtCpa(last.v1)} color="var(--v1)" />}
+            />
+            <ReferenceDot
+              x={last.day}
+              y={last.v2}
+              r={0}
+              isFront
+              label={(p) => <EndLabel viewBox={p.viewBox} text="Agent v2" value={fmtCpa(last.v2)} color="var(--accent)" />}
             />
           </LineChart>
         </ResponsiveContainer>

@@ -12,6 +12,11 @@ import { getAnimationDuration } from "../lib/motion";
 
 const ANIM = getAnimationDuration();
 
+const NOTES = {
+  search: "CPA drifts up as spend scales — saturation.",
+  display: "no sales → no CPA",
+};
+
 function MiniTooltip({ active, payload, label }) {
   if (!active || !payload || !payload.length) return null;
   const spend = payload.find((p) => p.dataKey === "spend")?.value;
@@ -33,7 +38,7 @@ function MiniTooltip({ active, payload, label }) {
   );
 }
 
-function Mini({ channel, data }) {
+function Mini({ channel, data, note }) {
   return (
     <div style={{ minWidth: 0 }}>
       <div
@@ -70,11 +75,13 @@ function Mini({ channel, data }) {
             stroke={CHANNEL_COLOR[channel]}
             strokeWidth={1.75}
             dot={false}
-            connectNulls
             animationDuration={ANIM}
           />
         </ComposedChart>
       </ResponsiveContainer>
+      {note && (
+        <p style={{ margin: "6px 0 0", fontSize: 10.5, color: "var(--ink-faint)", lineHeight: 1.4 }}>{note}</p>
+      )}
     </div>
   );
 }
@@ -91,7 +98,7 @@ export default function ChannelMultiples({ log }) {
       <div className="channel-grid" style={{ display: "grid", gap: 14 }}>
         {CHANNELS.map((c) => (
           <div key={c} className="card" style={{ padding: "12px 10px" }}>
-            <Mini channel={c} data={channelSeries(log, c)} />
+            <Mini channel={c} data={channelSeries(log, c)} note={NOTES[c]} />
           </div>
         ))}
       </div>
